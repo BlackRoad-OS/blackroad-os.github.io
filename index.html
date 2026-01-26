@@ -3,20 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noai, noimageai">
   <title>BlackRoad OS</title>
   <style>
-    body { margin:0; padding:2rem; background:#0a0a0a; color:#e5e7eb; font-family:ui-monospace,monospace; }
-    .frame { max-width:960px; margin:auto; border:1px solid #1f2937; padding:2rem; }
-    h1 { color:#667eea; margin:0 0 1rem; }
-    .muted { color:#6b7280; font-size:0.9rem; }
-    .block { margin-top:1.5rem; padding:1rem; border:1px solid #1f2937; background:#000; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0d1117; color: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; min-height: 100vh; }
+    
+    /* GitHub-style header */
+    header { background: #161b22; border-bottom: 1px solid #21262d; padding: 16px 24px; display: flex; align-items: center; gap: 16px; }
+    .logo { font-size: 1.4rem; font-weight: 600; color: #f0f6fc; display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .logo:hover { color: #58a6ff; }
+    nav { display: flex; gap: 16px; margin-left: auto; }
+    nav a { color: #c9d1d9; text-decoration: none; font-size: 14px; padding: 4px 8px; border-radius: 6px; }
+    nav a:hover { background: #21262d; color: #f0f6fc; }
+    
+    /* Main content */
+    main { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+    .hero { text-align: center; padding: 60px 0; }
+    .hero h1 { font-size: 3rem; color: #f0f6fc; margin-bottom: 16px; }
+    .hero p { font-size: 1.25rem; color: #8b949e; max-width: 600px; margin: 0 auto; }
+    
+    /* Cards grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
+    .card { background: #161b22; border: 1px solid #21262d; border-radius: 6px; padding: 24px; }
+    .card:hover { border-color: #388bfd; }
+    .card h3 { color: #58a6ff; font-size: 1rem; margin-bottom: 8px; }
+    .card p { color: #8b949e; font-size: 14px; line-height: 1.5; }
+    
+    /* Footer */
+    footer { border-top: 1px solid #21262d; padding: 24px; text-align: center; color: #484f58; font-size: 12px; margin-top: 80px; }
   </style>
 </head>
 <body>
-  <div class="frame">
-    <h1>⬛ BlackRoad OS</h1>
-    <div class="muted">Operator Controlled · Local First · Sovereign</div>
-    <div class="block">status: online<br>surface: github-pages</div>
-  </div>
+  <header>
+    <a href="/" class="logo">⬛ BlackRoad OS</a>
+    <nav>
+      <a href="https://blackroad.io/platform">Platform</a>
+      <a href="https://github.com/BlackRoad-OS">GitHub</a>
+      <a href="https://lucidia.earth">Lucidia</a>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="hero">
+      <h1>BlackRoad OS</h1>
+      <p>Operator Controlled · Local First · Sovereign Infrastructure</p>
+    </div>
+    
+    <div class="grid">
+      <div class="card">
+        <h3>🤖 1,000 AI Agents</h3>
+        <p>LangGraph + CrewAI orchestration with individual identities, memory, and emotional capacity.</p>
+      </div>
+      <div class="card">
+        <h3>☁️ Edge Infrastructure</h3>
+        <p>Cloudflare Workers, Vercel, 19 domains. Distributed by default.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Lucidia Core</h3>
+        <p>Recursive AI with trinary logic, paraconsistent reasoning, PS-SHA∞ memory persistence.</p>
+      </div>
+      <div class="card">
+        <h3>⛓️ RoadChain</h3>
+        <p>Hyperledger Besu blockchain for sovereign data and agent coordination.</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>© 2026 BlackRoad OS, Inc. · Delaware C-Corp</footer>
 </body>
 </html>
